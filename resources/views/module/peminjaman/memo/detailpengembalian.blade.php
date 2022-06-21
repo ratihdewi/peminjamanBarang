@@ -47,6 +47,28 @@
                                 <label class="small mb-1"> No. HP</label>
                                 <h3 style="margin-left:10px;">{{$peminjaman->no_hp}}</h3>
                             </div>
+                            @if($peminjaman->no_memo === NULL)
+                            <div class="form-group">
+                                <label class="small mb-1"> No. Memo</label>                                
+                                <h3 style="margin-left:10px;">Tidak ada nomor memo tersedia</h3>
+                            </div>
+                            @else
+                            <div class="form-group">
+                                <label class="small mb-1"> No. Memo</label> 
+                                <h3 style="margin-left:10px;">{{$peminjaman->no_memo}}</h3>
+                            </div>
+                            @endif
+                            @if($peminjaman->foto_memo === NULL)
+                            <div class="form-group">
+                                <label class="small mb-1"> Dokumen Pendukung</label>
+                                <h3 style="margin-left:10px;">Tidak ada file tersedia</h3>
+                            </div>
+                            @else
+                            <div class="form-group">
+                                <label class="small mb-1"> Dokumen Pendukung</label>
+                                <embed  name="foto_memo" type="application/pdf" id="foto_memo" src="{{asset('dokumen/memo/'.$peminjaman->foto_memo)}}" width="600" height="250"readonly=""></embed>
+                            </div>
+                            @endif
                         </div>
                            
                         <div class="col-xl-6 float-right">                           
