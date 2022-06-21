@@ -10,7 +10,7 @@
                             <tr>
                                 <th>Nama Barang</th>
                                 <th>Jumlah</th>
-                                <th>Aksi</th>
+                                <!-- <th>Aksi</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -18,9 +18,9 @@
                                 <tr>
                                     <td>{{$row->asset->nama_asset}}</td>
                                     <td>{{$row->jumlah}}</td>
-                                    <td class="text-center">
+                                    <!-- <td class="text-center">
                                         <a class="btn btn-hapus-item btn-sm btn-danger" href="javascript:ajaxItemDelete('{{route('peminjaman.item.delete', [$row])}}')"><small>Hapus</small></a>
-                                    </td>
+                                    </td> -->
                                 </tr>
                             @empty
                                 <tr>

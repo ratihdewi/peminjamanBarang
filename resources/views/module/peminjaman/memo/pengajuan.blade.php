@@ -14,7 +14,7 @@
     <div class="card mb-4">
         <div class="card-header">
         Riwayat Peminjaman
-            <div class="btn-group dropdown float-right">
+            <!-- <div class="btn-group dropdown float-right">
                 <button type="button" class="btn btn-success dropdown-toggle btn-sm float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Tambah Peminjaman
                 </button>
@@ -30,7 +30,7 @@
                         </a>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="card-body">
             <div class="datatable">

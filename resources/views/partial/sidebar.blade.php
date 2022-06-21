@@ -36,10 +36,10 @@
                     <div class="nav-link-icon"><i data-feather="columns" style="color:#385ac2;font-weight:bold;" ></i></div>
                     Data User
                 </a>
-                <a class="nav-link collapsed"  href="{{route('master.mail.index')}}" @if(request()->is('master/mail*')) style="color:#385ac2;font-weight:bold;background-color:#c1c1c2;" @endif>
+                <!-- <a class="nav-link collapsed"  href="{{route('master.mail.index')}}" @if(request()->is('master/mail*')) style="color:#385ac2;font-weight:bold;background-color:#c1c1c2;" @endif>
                     <div class="nav-link-icon"><i data-feather="external-link" style="color:#385ac2;font-weight:bold;" ></i></div>
                     Data Mail
-                </a>
+                </a> -->
                 @endif
             </div>
         </div>
